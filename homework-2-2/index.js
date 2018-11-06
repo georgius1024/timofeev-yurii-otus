@@ -18,14 +18,16 @@ function reduceFunction (memo, value) {
 
 const initialValue = 1
 
-function promiseReduce(asyncFunctions, reduceFunction, initialValue) { 
+function promiseReduce(asyncFunctions, reduceFunction, initialValue) {
   return asyncFunctions.reduce((accumulator, func) => {
-    return new Promise((resolve, reject) => {
-      accumulator.then(memo => { // Ждем аккумулятор
-        func().then(value => { // Ждем функцию
-            resolve(reduceFunction(memo, value)) // Отправляем новый аккумулятор
-          })
-      })
+    let memo
+    return accumulator
+    .then(value => {
+      memo = value
+      return func()
+    })
+    .then(value => {
+      return Promise.resolve(reduceFunction(memo, value))
     })
   }, Promise.resolve(initialValue))
 
