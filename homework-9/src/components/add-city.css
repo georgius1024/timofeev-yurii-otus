@@ -1,0 +1,20 @@
+.form {
+  padding: 32px;
+}
+.typeahead {
+  padding: 2px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.typeahead-item {
+  display: block;
+  padding: 4px 0;
+  text-decoration: none;
+  color: #777;
+}
+
+.typeahead-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #777;
+}

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`scanning module can scan existing folder 1`] = `
+Object {
+  "dirs": Array [
+    "tests/foo",
+    "tests/foo/bar",
+    "tests/foo/bar/baz",
+  ],
+  "files": Array [
+    "tests/foo/f1.txt",
+    "tests/foo/f2.txt",
+    "tests/foo/bar/bar1.txt",
+    "tests/foo/bar/bar2.txt",
+    "tests/foo/bar/baz/.gitignore",
+  ],
+}
+`;

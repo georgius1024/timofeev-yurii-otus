@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GetPath</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <script>
+    function findElementIndex(element) {
+      if (element.parentElement.children.length > 1) {
+        // НАЙТИ ЭЛЕМЕНТ В СПИСКЕ СИБЛИНГОВ
+        for(let i = 0; i < element.parentElement.children.length; i++) {
+          if (element.parentElement.children[i] === element) {
+            return i
+          }
+        }
+      }
+      return -1
+    }
+
+    function pathTransform(e, index) {
+      const first = index === 0
+      const tag = e.element.tagName.toLowerCase()
+      if (first) {
+        return `${tag}`
+      } else if (e.index >= 0) {
+        return `>${tag}:nth-child(${e.index+1})`
+      } else {
+        return `>${tag}`
+      }
+    }
+
+    function getPath(element) {
+      const path = []
+      while(element) {
+        const entry = {
+          element,
+          index: -1
+        }
+        path.push(entry)
+        if (element.tagName !== 'BODY') {
+          entry.index = findElementIndex(element)
+          element = element.parentElement // <-- НАВЕРХ
+        } else {
+          break // поднялись до BODY, выше не идем
+        }
+      }
+      path.reverse() // Обратный порядок
+      return path
+        .map(pathTransform)
+        .join('') 
+    }
+
+    window.onload = function () {
+      var prevMatch
+      // Будем по клику определять выбранный элемент 
+      // и подвсечивать его
+      document.body.onclick = function (event) {
+        const path = getPath(event.target)
+        const elements = document.querySelectorAll(path)  // <= здесь в коллекции должен быть один элемент (target)
+        if (elements.length === 0) {
+          alert('Error: missed')
+        } else if (elements.length > 1) {
+          alert('Error: too many found')
+        } else if (elements[0] === event.target) {
+          if (prevMatch) {
+            prevMatch.style.borderStyle = 'dotted'
+          }
+          prevMatch = elements[0]
+          elements[0].style.borderStyle = 'solid'
+        } else {
+          alert('Error: wrong element!')
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body, div, p, span, section, navigation {
+      margin: 8px;
+      padding: 8px;
+      display: block;
+      font-family: Roboto;
+      font-size: 16px;
+      border: 2px dotted green;
+    }
+    .wrapper {
+      min-height: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    0
+    <div class="wrapper">
+      1
+      <div class="wrapper">
+        1.1
+      </div>
+    </div>
+    <div class="wrapper">
+      2
+    </div>
+    <div class="wrapper">
+      3
+      <span class="wrapper">
+        3.1
+      </span>
+      <p class="wrapper">
+        3.2
+      </p>
+    </div>
+  </div>
+  <div class="wrapper">
+    A
+      <span class="wrapper">
+        A.1
+        <navigation class="wrapper">
+          A.1.1
+          <section class="wrapper">
+            A.1.1.1
+          </section>
+        </navigation>
+      </span>
+      <p class="wrapper">
+        A.2
+      </p>
+  </div>
+</body>
+</html>

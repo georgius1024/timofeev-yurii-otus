@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1542883931233" clover="3.2.0">
+  <project timestamp="1542883931233" name="All files">
+    <metrics statements="39" coveredstatements="38" conditionals="10" coveredconditionals="8" methods="15" coveredmethods="15" elements="64" coveredelements="61" complexity="0" loc="39" ncloc="39" packages="1" files="2" classes="2">
+      <file name="runner.js" path="C:\WWWR00T\otus\repo\homework-4\src\runner.js">
+        <metrics statements="14" coveredstatements="13" conditionals="6" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+      <file name="scan.js" path="C:\WWWR00T\otus\repo\homework-4\src\scan.js">
+        <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="4" methods="12" coveredmethods="12"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="6" count="18" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="17" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="23" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="14" type="stmt"/>
+        <line num="31" count="10" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="14" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="45" count="6" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+      </file>
+    </metrics>
+  </project>
+</coverage>

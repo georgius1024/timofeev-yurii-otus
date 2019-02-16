@@ -1,0 +1,9 @@
+{"name":"Кнут","price":580,"quantity":109,"description":"Эта штука называется \"Кнут\"","imageUrl":"https://picsum.photos/300","categoryId":"uWARsedVqtFz33xg","_id":"5KrRTS7HT1B77rNb"}
+{"name":"Синяя","price":98,"quantity":173,"description":"Эта штука называется \"Синяя\"","imageUrl":"https://picsum.photos/300","categoryId":"zCgAkGLHvQigZz8y","_id":"5h0uYxU8UtUiFJKp"}
+{"name":"Мужская","price":167,"quantity":143,"description":"Эта штука называется \"Мужская\"","imageUrl":"https://picsum.photos/300","categoryId":"gm5w0Lxyo8r9ZTkE","_id":"8YuTFbHlbKGUmzGv"}
+{"name":"Подробно про GraphQL на русском","price":393,"quantity":148,"description":"Эта штука называется \"Подробно про GraphQL на русском\"","imageUrl":"https://picsum.photos/300","categoryId":"uWARsedVqtFz33xg","_id":"9nSuNNJNQIMtwAnD"}
+{"name":"Красная","price":774,"quantity":145,"description":"Эта штука называется \"Красная\"","imageUrl":"https://picsum.photos/300","categoryId":"zCgAkGLHvQigZz8y","_id":"BBkU55UbuQTxLGyz"}
+{"name":"GraphQL Server","price":93,"quantity":170,"description":"Эта штука называется \"GraphQL Server\"","imageUrl":"https://picsum.photos/300","categoryId":"uWARsedVqtFz33xg","_id":"YwnlfjdyNp7mRJZk"}
+{"name":"Детская","price":678,"quantity":104,"description":"Эта штука называется \"Детская\"","imageUrl":"https://picsum.photos/300","categoryId":"gm5w0Lxyo8r9ZTkE","_id":"mTRa44d0vDq5N4Um"}
+{"name":"Женская","price":355,"quantity":192,"description":"Эта штука называется \"Женская\"","imageUrl":"https://picsum.photos/300","categoryId":"gm5w0Lxyo8r9ZTkE","_id":"sGE7myoDsvLkml20"}
+{"name":"Белая","price":112,"quantity":101,"description":"Эта штука называется \"Белая\"","imageUrl":"https://picsum.photos/300","categoryId":"zCgAkGLHvQigZz8y","_id":"wwsoRjW2J6dDhINC"}

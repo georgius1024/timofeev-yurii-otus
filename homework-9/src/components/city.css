@@ -1,0 +1,52 @@
+.city {
+  display: flex;
+  padding: 16px;
+  min-height: 100%;
+}
+.city-inner {
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.city-inner .city-canvas {
+  margin: 32px;
+  padding: 32px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header {
+  font-size: 64px;
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.removeControl {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0 32px;
+  align-self: flex-end;
+}
+
+.mr4 {
+  margin-right: 16px;
+}
+
+.wind-dir {
+  display: inline-block;
+  margin: 0 6px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+

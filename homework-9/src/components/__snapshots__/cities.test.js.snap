@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cities renders correctly 1`] = `
+<aside
+  className="menu"
+>
+  <p
+    className="menu-label"
+  >
+    Select city
+  </p>
+  <ul
+    className="menu-list"
+  >
+    <li>
+      <a
+        className=""
+        onClick={[Function]}
+      >
+        Moscow
+      </a>
+    </li>
+  </ul>
+  <div
+    className="menu-label"
+  >
+    <hr />
+  </div>
+  <ul
+    className="menu-list"
+  >
+    <li>
+      <a
+        onClick={[MockFunction]}
+      >
+        <span
+          className="icon"
+        >
+          <i
+            className="fas fa-plus"
+          />
+        </span>
+        Add city
+      </a>
+    </li>
+  </ul>
+</aside>
+`;

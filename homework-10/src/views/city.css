@@ -1,0 +1,16 @@
+.city-view {
+  padding: 16px;
+}
+
+table {
+  background-color: transparent !important;
+  color: #363636 !important;
+}
+
+.mr4 {
+  margin-right: 8px !important;
+}
+
+.pull-right {
+  float: right
+}

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index script fails when wrong params is specified 1`] = `
+Array [
+  Array [
+    "Listing for error",
+  ],
+]
+`;
+
+exports[`index script helps when no params is specified 1`] = `
+Array [
+  Array [
+    "Recursive directory listing",
+  ],
+  Array [
+    "Usage: npm run test -- path=<PATH>",
+  ],
+]
+`;
+
+exports[`index script works when valid params is specified 1`] = `
+Array [
+  Array [
+    "Listing for ./tests/foo",
+  ],
+  Array [
+    Object {
+      "dirs": Array [
+        "tests/foo",
+        "tests/foo/bar",
+        "tests/foo/bar/baz",
+      ],
+      "files": Array [
+        "tests/foo/f1.txt",
+        "tests/foo/f2.txt",
+        "tests/foo/bar/bar1.txt",
+        "tests/foo/bar/bar2.txt",
+        "tests/foo/bar/baz/.gitignore",
+      ],
+    },
+  ],
+]
+`;
